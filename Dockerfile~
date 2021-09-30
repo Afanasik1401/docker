@@ -1,0 +1,7 @@
+FROM debian:buster
+
+RUN apt-get update -y  && \
+apt-get install -y ruby-full  && \
+apt-get clean
+
+RUN gem install adsf -v 1.4.6
